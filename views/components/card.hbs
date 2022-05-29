@@ -1,9 +1,11 @@
-<article class="card">
+<article style="background-color: rgba(110, 32, 32, 0.588);" class="card">
     <div class="card-body">
         <p>{{item.origin}}</p>
-        <p>{{item.shortURL}}</p>
-        <div class="btn btn-danger">Eliminar</div>
-        <div class="btn btn-warning">Editar</div>
-        <div class="btn btn-info">Copiar</div>
+        <p>{{item.shortUrl}}</p>
+        <a href="/eliminar/{{item._id}}" class="btn btn-danger">Eliminar</a>
+        <a href="/editar/{{item._id}}" class="btn btn-warning">Editar</a>
+        <button data-short="{{item.shortUrl}}" href="#" class="btn btn-info">Copiar</button>
+
+
     </div>
 </article>
